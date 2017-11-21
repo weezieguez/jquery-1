@@ -2,6 +2,11 @@
 <html>
 <head>
   <title>jQuery test page</title>
+  <style>
+  .background {
+    background-color: yellow;
+  }
+  </style>
 </head>
 <body>
   <h1>Lorem ipsum</h1>
@@ -43,7 +48,12 @@
         $('h2').show()
         $('h3').show();
       }
-
+      function highlightByline(){
+        $('.byline').addClass("background");
+      }
+      function unHighlightByline(){
+        $('.byline').removeClass("background");
+}
   </script>
 
 </body>
